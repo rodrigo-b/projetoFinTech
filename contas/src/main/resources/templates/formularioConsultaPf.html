@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Consultar Conta</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-theme.min.css" />
+</head>
+<body class="container">
+
+	<div class="container">
+		<div class="row">
+			<form name="formularioConsultaPf" class="form-horizontal"
+				method="post" action="acaoConsulta">
+				<fieldset>
+
+					<legend>Consulta</legend>
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Cpf</label>
+						<div class="col-md-5">
+							<input name="cpf" type="text" placeholder="cpf" id="cpf"
+								class="form-control input-md" />
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-4 control-label">Consultar</label>
+						<div class="col-md-4">
+							<input type="submit" value="Consultar Conta"
+								class="btn btn-success btn-sm" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+		</div>
+
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Data de Criação</th>
+					<th>Cpf</th>
+					<th>Nome Completo</th>
+					<th>Data Nascimento</th>
+				</tr>
+			</thead>
+			<tbody>
+
+
+
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
